@@ -1,166 +1,134 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-dark">
 
 <head>
-  <meta name="author" content="Kenneth Lamb">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Create Account</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/main.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-  <link rel="icon" href="#" type="image/png" />
+  <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+  <title>Neutron!</title>
 </head>
 
 <body>
-  <!--NavBar-->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="index.html">Vault Systems</a>
+  <!--Navbar dark expands on large screens and fixed to the top-->
+  <nav class="navbar navbar-expand-lg bg-rasin-black navbar-dark py-3">
+    <div class="container">
+      <!--Navbar logo-->
+      <a href="index.html" class="navbar-brand">Neutron</a>
 
-    <!--Small form button-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!--Hamburger button when collapsed-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Collapsable navbar-->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!--navbar item list ms-auto will bring them to the right automatically-->
+        <ul class="navbar-nav me-auto">
+          <!--Nav Items-->
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Products</a>
+          </li>
+        </ul>
 
-    <!--Nav items set to the right of the navbar-->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <!--Main Nav-->
-      <ul class="navbar-nav me-auto" style="padding-right: 50px">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Products</a>
-        </li>
-      </ul>
-
-      <!--Login and Signup-->
-      <ul class="nav navbar-nav ml-auto navbar-right">
-        <li class="nav-item">
-          <a  class="nav-link" href="Login.html">Login</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="CreateAccount.html">Sign Up</a>
-        </li>
-      </ul>
+        <!--Login and Signup-->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CreateAccount.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-  <!--End Navbar-->
 
-  <header>
-
-  </header>
-
-  <mian role="main">
-    <!--Title to the page-->
-    <div class="container-fluid loginForm mx-auto">
-      <div class="row no-gutter">
-
-        <div class="col-sm-4 col-md-4 col-lg-4 offset-sm-4 mx-auto">
-          <div class="mt-5 pt-5">
-          </div>
+  <section class="p-5 bg-dark text-center">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-4 col-md-6 bg-light p-3" style="border-radius: 1em;">
+          <h1 class="h3 mb-3 font-weight-normal">Welcome Back!</h1>
           <!--Login Form-->
-          <form class="form-signin">
-            <!--User Type Selection Row-->
-            <div class="row no-gutter">
-              <div class="col">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <label class="input-group-text form-rounded" for="inputGroupSelect01">User Selection</label>
-                  </div>
-                  <select class="custom-select form-rounded" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
-                    <option value="1">End User</option>
-                    <option value="2">HelpDesk</option>
-                    <option value="3">Admin</option>
-                  </select>
-                </div>
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">User Selection</label>
               </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Choose...</option>
+                <option value="1">End User</option>
+                <option value="2">HelpDesk</option>
+                <option value="3">Admin</option>
+              </select>
             </div>
-            <!--Name Row-->
-            <div class="row">
-              <div class="col">
+
+            <div class="row mb-3">
+              <div class="col-sm-6">
                 <input type="text" class="form-control form-rounded mt-3" placeholder="First name" required="" autofocus="">
               </div>
-              <div class="col">
+              <div class="col-sm-6">
                 <input type="text" class="form-control form-rounded mt-3" placeholder="Last name" required="">
               </div>
             </div>
-            <!--Username Row-->
-            <div class="row">
-              <div class="col">
-                <label for="inputUserName" class="sr-only">Username</label>
-                <input type="text" id="inputUserName" class="form-control form-rounded mt-3" placeholder="User Name" required="">
-              </div>
+            <!--Email-->
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email" required=""/>
             </div>
-            <!--Email Row-->
-            <div class="row">
-              <div class="col">
-                <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control form-rounded mt-3" placeholder="Email address" required="">
-              </div>
+            <!--Password-->
+            <div class="mb-3">
+              <input type="password" class="form-control" id="password" placeholder="Password" required=""/>
             </div>
-            <!--Password Row-->
-            <div class="row">
-              <div class="col">
-                <label for="inputPassword" class="sr-only ">Password</label>
-                <input type="password" id="inputPassword" class="form-control form-rounded mt-3" placeholder="Password" required="">
-              </div>
-              <div class="col">
-                <label for="inputPassword" class="sr-only ">Re-enter Password</label>
-                <input type="password" id="inputPassword" class="form-control form-rounded mt-3" placeholder="Re-enter Password" required="">
-              </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="password-confirm" placeholder="Re-enter Password" required=""/>
             </div>
-            <!--Submit button-->
-            <button class="btn btn-md btn-primary btn-block form-rounded mt-3" type="submit">Create Account</button>
-            <!--Already Registered?-->
-            <p class="text-center mt-3">Already registered? <a href="Login.html">Log in</a></p>
+
+            <button class="btn btn-mg btn-primary btn-block w-100" type="submit">
+              Sign in
+            </button>
+            <p class="mt-3">
+              Already registered
+              <a href="login.html">Login</a>
+            </p>
+
           </form>
         </div>
       </div>
     </div>
-    <!--End Login Form-->
-    </main>
+  </section>
 
-    <!--Footer of the page-->
-    <footer>
-      <div class="container-fluid">
-        <div class="row no-gutter">
-          <div class="col-sm-3 col-md col-lg">
-          </div>
 
-          <div class="col-sm-3 col-md col-lg">
 
-          </div>
+  <!--footer-->
+  <footer class="p-1 bg-dark text-white text-center fixed-bottom">
+    <div class="container">
+      <hr>
+      <!--paragraph-->
+      <p class="text-muted">
+        Copyright &copy; 2021 Neutron
+      </p>
+    </div>
+  </footer>
 
-          <div class="col-sm-3 col-md col-lg">
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-          </div>
-
-          <div class="col-sm-3 col-md col-lg">
-          </div>
-        </div>
-        <div class="row no-gutter">
-          <div class="col-sm col-md col-lg">
-            <hr style="width: 75%">
-            <p class="text-center">Copyright 2020 Vault Systems - All Rights Reserved</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--End footer-->
 </body>
 
 </html>
