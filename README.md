@@ -1,5 +1,5 @@
 # Bootstrap-Login-Site
-This is a template for a login site using bootstrap 4.5
+This is a template for a login site using bootstrap 5
 
 ## Pages Included
 - Home Page
