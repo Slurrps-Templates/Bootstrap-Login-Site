@@ -1,3 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+/*Alternate Colors*/
+a{
+    color: #4a4c6a;
+}
+
+a:hover {
+    color: white;
+}
+
+.btn-primary {
+    border-color: #4a4c6a;
+    background-color: #4a4c6a;
+}
+
+.btn-primary:hover {
+    border-color: #7779a6;
+    background-color: #7779a6;
+}
+
 .bg-rasin-black {
-  background-color: #272838;
+    background-color: #272838;
 }
