@@ -9,10 +9,6 @@ body, html {
 }
 
 /*Alternate Colors*/
-a{
-    color: #4a4c6a;
-}
-
 a:hover {
     color: white;
 }
