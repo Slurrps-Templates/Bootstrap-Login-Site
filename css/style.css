@@ -30,3 +30,8 @@ a:hover {
 .color-rasin-black {
     color: #272838;
 }
+
+.modal a {
+    text-decoration: none;
+    font-weight: 700;
+}
